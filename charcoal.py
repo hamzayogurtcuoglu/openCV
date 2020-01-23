@@ -10,7 +10,7 @@ else:
     deltay = 105
 
 imaj = cv2.imread("resim.png")
-# imaj ,komşuluk_çapı_sigma_renk,sigma_uzay 
+
 gray =cv2.cvtColor(imaj,cv2.COLOR_BGR2GRAY)
 blur = cv2.GaussianBlur(gray,(7,7),0)
 canny =cv2.Canny(blur,0,30)
